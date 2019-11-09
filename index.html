@@ -1,0 +1,40 @@
+<html>
+  <head>
+    <title>A simple parser in Javascript</title>
+  </head>
+  <body>
+    <h3>A simple parser in Javascript</h3>
+    <script src="parser.js" type="text/javascript"></script>
+
+    <h3>A simple parser in Javascript</h3>
+
+    <form
+      method="submit"
+      onsubmit="evaluateArithmeticExpression(); return false;"
+    >
+      <label for="expression">
+        Enter arithmetic expression to calculate e.g : 2+3</label
+      >
+      <input type="text" id="expression" />
+      <button type="submit" onclick="evaluateArithmeticExpression()">
+        Evaluate
+      </button>
+      <h4>Result:</h4>
+      <div id="result"></div>
+    </form>
+    <script type="text/javascript">
+      function evaluateArithmeticExpression() {
+        //debugger;
+        var expression = document.getElementById("expression").value;
+        var result = "";
+        if (expression === null || expression.length < 1) {
+          result = "Empty expression";
+        }
+        result = parserArithmeticSimpleModule.parseArithmeticExpression(
+          expression
+        );
+        document.getElementById("result").innerText = result.toString();
+      }
+    </script>
+  </body>
+</html>
