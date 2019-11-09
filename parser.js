@@ -11,10 +11,22 @@ var parserArithmeticSimpleModule = (function() {
     return total;
   };
 
+  parseDivisionSeparatedExpression = function(expression) {
+    var numbersString = expression.split("/");
+    var numbers = numbersString.map(function(item) {
+      return parseMultiplicationSeparatedExpression(item);
+    });
+    var total = numbers.reduce(dividePart);
+    function dividePart(total, num) {
+      return total / num;
+    }
+    return total;
+  };
+
   parseMinusSeparatedExpression = function(expression) {
     var numbersString = expression.split("-");
     var numbers = numbersString.map(function(item) {
-      return parseMultiplicationSeparatedExpression(item);
+      return parseDivisionSeparatedExpression(item);
     });
     var total = numbers.reduce(subtractPart);
     function subtractPart(total, num) {
