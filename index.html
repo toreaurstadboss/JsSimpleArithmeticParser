@@ -23,9 +23,7 @@
       method="submit"
       onsubmit="evaluateArithmeticExpression(); return false;"
     >
-      <label for="expression">
-        Enter arithmetic expression to calculate e.g : 2+3</label
-      >
+      <label for="expression"> Enter arithmetic expression to calculate:</label>
       <input type="text" id="expression" />
       <button type="submit" onclick="evaluateArithmeticExpression()">
         Evaluate
@@ -33,6 +31,14 @@
       <h4>Result:</h4>
       <div id="result"></div>
     </form>
+
+    <code>
+      Supported tokens in parser are parentheses and +-/* operators
+      Examples:
+      2+3 should evaluate to 5 
+      12 * 5–(5 * (32 + 4)) + 3 should evalute to -117
+    </em>
+
     <script type="text/javascript">
       function evaluateArithmeticExpression() {
         //debugger;
