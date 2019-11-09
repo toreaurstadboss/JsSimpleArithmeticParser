@@ -21,6 +21,7 @@ var parserArithmeticSimpleModule = (function() {
     if (currentChunk !== "") {
       result.push(currentChunk);
     }
+    //console.log("Result of splitByParenthesesBlocks: " + result);
     return result;
   };
 
@@ -81,6 +82,9 @@ var parserArithmeticSimpleModule = (function() {
     if (expression === null || expression.length === 0) {
       return expression;
     }
+    //known issue - remove the char '–' with '-' (hyphen is replaced with minus)
+
+    expression = expression.replace(/–/g, "-");
     var whitespaceRemovedExpression = expression.replace(/\s/g, "");
     return parsePlusSeparatedExpression(whitespaceRemovedExpression);
   };
