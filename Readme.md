@@ -1,9 +1,11 @@
-#### JsSimpleArithmeticParser
+# JsSimpleArithmeticParser
 
-##What is it?
+## What is it?
+
 A simple parser for calculating arithmetic expressions, supporting the operators +-\*/ and parentheses.
 
-##How to use it?
+## How to use it?
+
 Include the parser Javascript file on a page and then calculate the arithmetic expression using this code as an Example:
 
 ```javascript
@@ -24,16 +26,20 @@ Include the parser Javascript file on a page and then calculate the arithmetic e
     </script>
 ```
 
-###Is algebraic expressions supported?
+## Is algebraic expressions supported?
+
 No. This is a plain arithmetic parser.
 
-###Can I see the source code of the parser?
+## Can I see the source code of the parser?
+
 Sure. Here you go. <a href='parser.js'>parser.js</a>
 
-###Is the source code supported in all browser?
+## Is the source code supported in all browser?
+
 Yes, the parser is written in pure js with no use of ES6 syntax. It should be supported in most major browsers today.
 
-###How is operator precendence kept?
+## How is operator precendence kept?
+
 The precedence is from least preceding to most the following standard:
 
 - Addition
