@@ -43,10 +43,9 @@ Yes, the parser is written in pure js with no use of ES6 syntax. It should be su
 The precedence is from least preceding to most the following standard:
 
 - Addition
-
-* Subtraction
-  / Division
-  Multiplication
-  () Parentheses
+- Subtraction
+- / Division
+- Multiplication
+- () Parentheses
 
 This is in accordance with standard operator precendence in computerized mathematics.
