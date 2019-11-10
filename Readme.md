@@ -32,7 +32,7 @@ No. This is a plain arithmetic parser.
 
 ## Can I see the source code of the parser?
 
-Sure. Here you go. <a href='parser.js'>parser.js</a>
+Sure. Here you go. <a href='https://github.com/toreaurstadboss/JsSimpleArithmeticParser/blob/master/parser.js'>parser.js</a>
 
 ## Is the source code supported in all browser?
 
