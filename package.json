@@ -1,6 +1,6 @@
 {
   "name": "simplejsparsermatharithmetic",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A simple parser in Javascript for evaluating basic arithmetic expression support the base four arithmetic operators +-/ and parentheses.*",
   "main": "parser.js",
   "scripts": {
