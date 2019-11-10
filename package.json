@@ -1,7 +1,7 @@
 {
-  "name": "simplejsparsermathfunarithmetic",
+  "name": "simplejsparsermatharithmetic",
   "version": "1.0.0",
-  "description": "A simple parser in Javascript for evaluating basic arithmetic expression support the base four arithmetic operators +-/*",
+  "description": "A simple parser in Javascript for evaluating basic arithmetic expression support the base four arithmetic operators +-/ and parentheses.*",
   "main": "parser.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -13,6 +13,7 @@
     "arithmetic",
     "demo"
   ],
-  "author": "Tore",
-  "license": "MIT"
+  "author": "Tore Aurstad",
+  "license": "MIT",
+  "homepage": "https://github.com/toreaurstadboss/JsSimpleArithmeticParser"
 }
