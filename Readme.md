@@ -49,3 +49,34 @@ The precedence is from least preceding to most the following standard:
 - () Parentheses
 
 This is in accordance with standard operator precendence in computerized mathematics.
+
+## What syntax is supported?
+
+The following two examples shows the syntax supported.
+
+```bash
+
+      2+3 should evaluate to 5 
+      12 * 5–(5 * (32 + 4)) + 3 should evalute to -117
+
+```
+
+The examples shows that it is easy to calculate arithmetic expressions with this simple parser.
+
+## Is it easy to extend this parser?
+
+Yes! Just add more syntax supported to the parser. Note the precedence, and that you have a main loop starting with the plus operator
+and going upwards to minus, division, multiplication and if necessary doing recursive calls again to the plus operator. If you want to support another 
+operator such as sine of a number, you can add this.
+
+## Why not just use Math.eval ?
+
+Of course, but I did this repo as an educational exercise for myself to learn more about Javascript. I also want to look into what can be made for making a parser
+than can evalute other scenarios, such as lambda expressions and then I started with this parser.
+
+
+Last update
+10.11.2019
+Tore Aurstad
+E-mail: tore.aurstad@gmail.com 
+Blog: https://toreaurstad.blogspot.com 
